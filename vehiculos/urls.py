@@ -12,5 +12,6 @@ urlpatterns = [
     path('editar_<int:id2>/', views.actualizar, name="actualizar"),
     path('borrar_<int:id2>', views.borrar, name="borrar"),
     path('CRUD/', views.CRUD, name="CRUD"),
-    path('buscador/', views.buscar)
+    path('buscador/', views.buscar),
+    
 ]
