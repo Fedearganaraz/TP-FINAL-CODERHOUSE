@@ -1,10 +1,27 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.template import loader
+from django.views.generic.list import ListView
+from django.views.generic.edit import DeleteView,UpdateView,CreateView
+from django.views.generic import DeleteView
 
 from .models import carros, motos
+from .models import Libros
 
 # Create your views here.
+
+def home (request):
+    return render (request, inicio.html)
+
+
+class ListarLibro(ListView):
+    model = Libros
+    template_name = "" 
+
+
+
+
+
 
 def inicio(request):
 
