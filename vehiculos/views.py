@@ -16,7 +16,27 @@ def home (request):
 
 class ListarLibro(ListView):
     model = Libros
-    template_name = "" 
+    template_name = "Libros/listar_libro.html" 
+
+
+class CrearLibro(ListView):
+    model = Libros
+    template_name = "Libros/crear_libro.html" 
+
+
+class EditarLibro(ListView):
+    model = Libros
+    template_name = "Libros/editar_libro.html" 
+
+
+class EliminarLibro(ListView):
+    model = Libros
+    template_name = "Libros/eliminar_libro.html" 
+
+
+class MostarLibro(ListView):
+    model = Libros
+    template_name = "Libros/mostrar_libro.html" 
 
 
 

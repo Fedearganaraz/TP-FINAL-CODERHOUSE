@@ -1,0 +1,29 @@
+{% extends "base2.html" %}
+
+{% block title %}
+Edicion de Libros
+{% endblock title %}
+
+
+{% block title_page %}
+Editando Libros
+{% endblock title_page %}
+
+
+{% block contenido %}
+<p> 
+    <a href= {% url "listar_libro" %}> Volver </a>
+
+</p>
+
+<div> 
+    <form action ={% url "editar_libro" libro.id %}  methods ="post">
+        {% csrf_token %}
+        <table> 
+        {{form.as_table}}
+        </table>
+        <button class="btn btn-danger">Editar</button>
+    </form>
+
+</div>
+{% endblock contenido %}
