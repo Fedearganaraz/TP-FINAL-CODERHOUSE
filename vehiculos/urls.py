@@ -1,6 +1,8 @@
 from django.urls import path
 from .views import home, ListarLibro, CrearLibro, EditarLibro, MostarLibro, EliminarLibro
 from vehiculos import views
+from vehiculos import Templates
+
 
 
 urlpatterns = [

@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'vehiculos'
+    'vehiculos',
+    "mi_mvt",
 ]
 
 
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'mi_mvt.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r'C:\Users\ASUS\Desktop\DJANGO3\vehiculos\Templates'],
+        'DIRS': [r'..Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

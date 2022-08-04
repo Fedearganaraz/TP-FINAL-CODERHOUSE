@@ -27,9 +27,8 @@ Listando Libros
                     <a href={% url "eliminar_libro" libro.id %} Eliminar></a>
                 </li> 
             {% endfor %}
-    {% else %}
+        {% else %}
         <p> No hay libros registrados </p>
-    {% endif %}
-             
+        {% endif %}               
 </div>
 {% endblock contenido %}
